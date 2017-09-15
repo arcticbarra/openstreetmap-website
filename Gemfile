@@ -67,6 +67,8 @@ gem "omniauth-mediawiki", ">= 0.0.3"
 gem "omniauth-openid"
 gem "omniauth-windowslive"
 
+gem 'sendgrid'
+
 # Markdown formatting support
 gem "redcarpet"
 
