@@ -2,11 +2,6 @@ require "migrate"
 
 class CreateOsmDb < ActiveRecord::Migration
   def self.up
-    execute <<-SQL
-    CREATE FUNCTION maptile_for_point(int8, int8, int4) RETURNS int4 AS '`pwd`/db/functions/libpgosm', 'maptile_for_point' LANGUAGE C STRICT;
-    CREATE FUNCTION tile_for_point(int4, int4) RETURNS int8 AS '`pwd`/db/functions/libpgosm', 'tile_for_point' LANGUAGE C STRICT;
-    CREATE FUNCTION xid_to_int4(xid) RETURNS int4 AS '`pwd`/db/functions/libpgosm', 'xid_to_int4' LANGUAGE C STRICT
-    SQL
     create_table "current_nodes", :id => false do |t|
       t.column "id",        :bigint, :null => false
       t.column "latitude",  :float, :limit => 53
