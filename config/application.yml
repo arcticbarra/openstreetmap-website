@@ -1,7 +1,7 @@
 defaults: &defaults
   # The server protocol and host
   server_protocol: "http"
-  server_url: "disruptivemaps.herokuapp.com"
+  server_url: "ec2-52-200-156-195.compute-1.amazonaws.com"
   # Publisher
   #publisher_url: ""
   # The generator
@@ -82,7 +82,7 @@ defaults: &defaults
   # OAuth consumer key for the web site
   #oauth_key: ""
   # OAuth consumer key for iD
-  id_key: "hrSRCTRovfi43mjhEpkZTSNcraURGtw8Qz8OAHnf"
+  id_key: "NK4KLg2I2n4ZTALhbk68OOGwwEaPMl0b9cuop9Rr"
   # Whether to require users to view the CTs before continuing to edit...
   require_terms_seen: false
   # Whether to require users to agree to the CTs before editing
